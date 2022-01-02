@@ -1,0 +1,25 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "Example project to showcase rendering pdfs on the backend with React-PDF",
+  "main": "index.ts",
+  "scripts": {
+    "serve": "nodemon index.ts"
+  },
+  "author": "Export SDK",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/faker": "^5.5.9",
+    "@types/node": "^17.0.2",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "@react-pdf/renderer": "^2.0.21",
+    "express": "^4.17.2",
+    "faker": "^5.5.3",
+    "react": "^17.0.2"
+  }
+}
