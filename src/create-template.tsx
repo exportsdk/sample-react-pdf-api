@@ -7,24 +7,38 @@ import ReactPDF, {
   StyleSheet,
 } from "@react-pdf/renderer";
 
+// Styles used for the PDF template
 const styles = StyleSheet.create({
   page: {
-    flexDirection: "row",
     backgroundColor: "#E4E4E4",
   },
   section: {
     margin: 10,
     padding: 10,
-    flexGrow: 1,
   },
   mainHeader: {},
   mainHeaderText: {},
-  sectionHeaderText: {},
-  paragraph: {},
-  column: {},
-  columnHeaderText: {},
+  sectionHeaderText: {
+    fontSize: 15,
+    fontWeight: "medium",
+    marginBottom: 8,
+  },
+  paragraph: {
+    fontSize: 12,
+    lineHeight: 1.5,
+  },
+  columnParent: {
+    flexDirection: "row",
+  },
+  column: {
+    flex: 1,
+  },
+  columnHeaderText: {
+    fontSize: 14,
+  },
 });
 
+// Expected data to be passed in
 type TemplateData = {
   firstName: string;
   lastName: string;
@@ -43,7 +57,7 @@ const PDF = ({ data }: PDFProps) => {
   return (
     <Document>
       <Page size="A4" style={styles.page}>
-        <View style={styles.mainHeader}>
+        <View style={styles.section}>
           <Text
             style={styles.mainHeaderText}
           >{`${data.firstName} ${data.lastName}`}</Text>
@@ -54,7 +68,7 @@ const PDF = ({ data }: PDFProps) => {
           <Text style={styles.paragraph}>{data.description}</Text>
         </View>
 
-        <View style={styles.section}>
+        <View style={[styles.section, styles.columnParent]}>
           <View style={styles.column}>
             <Text style={styles.columnHeaderText}>Column #1</Text>
           </View>

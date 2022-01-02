@@ -3,7 +3,8 @@
     "jsx": "react",
     "module": "commonjs",
     "target": "es6",
-    "rootDir": "./",
-    "esModuleInterop": true
+    "rootDir": "./src",
+    "esModuleInterop": true,
+    "outDir": "./build"
   }
 }
