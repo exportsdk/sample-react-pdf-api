@@ -15,7 +15,7 @@ npm run serve
 ```
 
 ### Send POST requests to generate PDFs
-To generate a PDF, send a JSON blog matching the expected data in the body of a POST request.
+To generate a PDF, send a JSON blob matching the expected data in the body of a POST request.
 
 Using the default template, the JSON would look like this:
 
