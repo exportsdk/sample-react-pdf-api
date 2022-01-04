@@ -1,5 +1,7 @@
 # sample-react-pdf-api
-A barebones NodeJS API that will generate PDFs with the help of React PDF. This repo was created for the tutorial [How to Generate PDFs with NodeJS and React PDF](https://exportsdk.com/how-to-generate-pdfs-with-nodejs).
+A barebones NodeJS API that will generate PDFs with the help of React PDF. 
+
+This repo was created for the tutorial [How to Generate PDFs with NodeJS and React PDF](https://exportsdk.com/how-to-generate-pdfs-with-nodejs).
 
 ## Getting started
 ### Install dependencies
