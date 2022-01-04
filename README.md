@@ -4,19 +4,19 @@ A barebones NodeJS API that will generate PDFs with the help of React PDF.
 This repo was created for the tutorial [How to Generate PDFs with NodeJS and React PDF](https://exportsdk.com/how-to-generate-pdfs-with-nodejs).
 
 ## Getting started
-Install the dependencies.
+###Install the dependencies.
 
 ```bash
 npm install
 ```
 
-## Start the server (for dev)
+### Start the server (for dev)
 
 ```bash
 npm run serve
 ```
 
-## Send POST requests to generate PDFs
+### Send POST requests to generate PDFs
 To generate a PDF, send a JSON blog matching the expected data in the body of a POST request.
 
 Using the default template, the JSON would look like this:
